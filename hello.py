@@ -1,24 +1,33 @@
+class Calculator:
+    def __ini__(self):
+        pass
 
-def find_square(num):
-    result = num * num
-    return result
+    def add(self, num1, num2):
+        return num1 + num2
+
+    def subtract(self, num1, num2):
+        return num1 - num2
+
+    def multiply(self, num1, num2):
+        return num1 * num2
+
+    def divide(self, num1, num2):
+        if num2 != 0:
+            return num1 / num2
+        else:
+            print('cannot divide by zero')
 
 
-square = find_square(3)
-
-print('Square:',square)
+calculator = Calculator()
 
 
+result_add = calculator.add(5, 3)
+result_subtract = calculator.subtract(8, 4)
+result_multiply = calculator.multiply(2, 6)
+result_divide = calculator.divide(10, 2)
 
-def sum(a, b,c,d): 
-    return a+b+c+d
 
-
-total=sum(78,65,78,98) 
-print(total)
-
-ave=(total/400)*100
-print(ave)
-
-# total=sum(5, sum(10, 20))
-# print(total)
+print("Addition:", result_add)
+print("Subtraction:", result_subtract)
+print("Multiplication:", result_multiply)
+print("Division:", result_divide)

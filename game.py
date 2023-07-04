@@ -11,11 +11,11 @@ for i in range(1,4):
       if (a==b):
             print("you won")
 
-            print(a)
+            print(a,b)
             break
       else:
          print("you lose")
-         print(a)
+         print(a,b)
          
  if i==2:
         a=random.randint(1,19)
@@ -38,29 +38,16 @@ for i in range(1,4):
          break
         else:
          print("you loose third time")  
-         print(a)
+         print(a,b)
 
       
     
 
-print(b)
 
 
 
 
 
-# import random
 
-# fruits = ['apple', 'banana', 'orange', 'grape']
-
-# random_fruit = random.choice(fruits)
-# print(random_fruit)
-
-# import random
-
-# cards = ['ace', '2', '3', '4', '5', '6', '7', '8', '9', '10', 'jack', 'queen', 'king']
-
-# random.shuffle(cards)
-# print(cards)
 
     
